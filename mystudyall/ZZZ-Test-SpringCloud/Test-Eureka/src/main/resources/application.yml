@@ -1,0 +1,14 @@
+server:
+  port: 7001
+
+eureka:
+  instance: # eureak实例定义
+    hostname: eureka # 定义 Eureka 实例所在的主机名称
+  client:
+    fetch-registry: false #是否要从eureka中获取注册信息
+    register-with-eureka: false #是否要注册到eureka
+    service-url:
+      defaultZone: http://admin:enjoy@localhost:7001/eureka
+  server:
+    eviction-interval-timer-in-ms: 30000   #设置清理的间隔时间，而后这个时间使用的是毫秒单位（默认是60秒）
+    enable-self-preservation: false #设置为false表示关闭保护模式
