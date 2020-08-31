@@ -14,7 +14,7 @@ public class TestJDBC {// 我是第二个人的提交
     private static String DB_URL = "jdbc:mysql://localhost:3306/zzz_test";
     private static String USER = "root";
     private static String PASSWORD = "root"; // 大小写转换ctrl+shift+u
-
+// 20200831---01
     public static void main(String[] args) {
 
         try {
