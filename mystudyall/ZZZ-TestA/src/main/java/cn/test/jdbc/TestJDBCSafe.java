@@ -12,9 +12,8 @@ import java.util.concurrent.CyclicBarrier;
 * jdbc超时机制：https://blog.csdn.net/lc87624/article/details/84383899?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.compare&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.compare
 * https://blog.csdn.net/zdx1515888659/article/details/80775193
 * */
-public class TestJDBCSafe {// 20200831---01
-
-
+public class TestJDBCSafe { // 20200831---提交master
+    // hhhtijiao1111
     private static String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     private static String DB_URL = "jdbc:mysql://localhost:3306/zzz_test";
     private static String USER = "root";
