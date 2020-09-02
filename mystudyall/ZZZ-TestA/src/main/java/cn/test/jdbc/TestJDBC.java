@@ -11,6 +11,7 @@ import java.sql.PreparedStatement;
 * */
 public class TestJDBC {// 我是第二个人的提交
     // testttt
+    // aa-feature--001
     private static String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     private static String DB_URL = "jdbc:mysql://localhost:3306/zzz_test";
     private static String USER = "root";
