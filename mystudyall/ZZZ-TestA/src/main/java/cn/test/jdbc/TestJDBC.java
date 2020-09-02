@@ -10,6 +10,7 @@ import java.sql.PreparedStatement;
 * https://blog.csdn.net/zdx1515888659/article/details/80775193
 * */
 public class TestJDBC {// 我是第二个人的提交
+    // testttt
     private static String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     private static String DB_URL = "jdbc:mysql://localhost:3306/zzz_test";
     private static String USER = "root";
