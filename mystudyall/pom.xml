@@ -13,6 +13,7 @@
         <module>ZZZ-CommonUtil</module>
         <module>ZZZ-Test-MybatisPlus</module>
         <module>ZZZ-Test-SpringCloud</module>
+        <module>ZZZ-TestALL</module>
     </modules>
 
     <properties>
