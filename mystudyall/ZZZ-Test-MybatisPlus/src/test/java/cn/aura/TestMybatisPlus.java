@@ -35,4 +35,19 @@ public class TestMybatisPlus {
         System.out.println(user);
     }
 
+    @Test
+    public void updateUserAge(){
+        User user = new User();
+        user.setId(3);
+        user.setAge(18);
+        userMapper.updateById(user);
+    }
+    @Test
+    public void insertUser(){
+        User user = new User();
+        user.setId(2);
+        user.setAge(18);
+        userMapper.insert(user);
+    }
+
 }

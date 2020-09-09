@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.aura.mapper.UserMapper" >
+    <update id="fUpdateById" parameterType="cn.aura.entity.User" >
+    UPDATE USER
+    SET
+        nickname = #{nickname},
+	    role = #{role},
+	    userName = #{username},
+	    age = #{age},
+	    sex = #{sex}
+    WHERE
+	    id = #{id}
+  </update>
+</mapper>

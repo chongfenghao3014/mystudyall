@@ -18,5 +18,9 @@ public class User  extends Model<User> implements Serializable {
     private String username;// 注意如果字段名称是userName，那么查询的列名就是user_name.
     private Integer age;
     private Integer sex;
+    @Override
+    public String toString(){
+        return "id:"+id+" ,nickname:"+nickname+" ,role"+role+" ,username"+username+" ,age"+age;
+    }
 }
 
