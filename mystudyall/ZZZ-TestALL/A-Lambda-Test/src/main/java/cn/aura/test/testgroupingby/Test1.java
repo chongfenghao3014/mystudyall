@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Test1 {
     public static void main(String[] args) {
@@ -27,6 +28,7 @@ public class Test1 {
                 collect(Collectors.groupingBy(Fruit::getName,Collectors.counting()));
         System.out.println(map);// {banana=3, apple=2, grape=1} 做统计
 
+        Stream<String> stringStream = fruitList.stream().map(Fruit::getName);
         Map<String, Long> map2 = fruitList.stream().map(Fruit::getName).
                 collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
         System.out.println(map2);// {banana=3, apple=2, grape=1} 和上面相同
