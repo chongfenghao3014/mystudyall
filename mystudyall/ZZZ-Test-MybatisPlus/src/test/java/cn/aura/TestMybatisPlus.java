@@ -39,8 +39,14 @@ public class TestMybatisPlus {
     public void updateUserAge(){
         User user = new User();
         user.setId(3);
+        user.setNickname("你成年了->");
         user.setAge(18);
-        userMapper.updateById(user);
+        try {
+            userMapper.updateById(user);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("1111122222222233333333333");
+        }
     }
     @Test
     public void insertUser(){
