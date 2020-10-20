@@ -29,6 +29,15 @@ public class Test1 {
         System.out.println(map);// {banana=3, apple=2, grape=1} 做统计
 
         Stream<String> stringStream = fruitList.stream().map(Fruit::getName);
+//        fruitList.stream().map(new Function<Fruit, Object>() {
+//            @Override     // 接收一个fruit对象，使用这个对象调用getName方法。
+//            public Object apply(Fruit fruit) {
+//                return fruit.getName();
+//            }
+//        });
+        stringStream.forEach(item -> System.out.print(item+"  "));
+        //apple  apple  banana  banana  banana  grape
+        System.out.println();
         Map<String, Long> map2 = fruitList.stream().map(Fruit::getName).
                 collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
         System.out.println(map2);// {banana=3, apple=2, grape=1} 和上面相同
