@@ -50,6 +50,7 @@ public class TestGroupingBy {
         System.out.println("=======groupingBy==========");
         Stream<Person> stream = Stream.of(new Person("1", "aa", "12"),
                 new Person("1", "bb", "13"), new Person("3", "cc", "14"));
+//        Map<String, List<Person>> collect = stream.collect(Collectors.groupingBy(x -> x.id));
         System.out.println(stream.collect(Collectors.groupingBy(x -> x.id))); // 使用id分组
         //{1=[Person{id='1', name='aa', age='12'}, Person{id='1', name='bb', age='13'}], 3=[Person{id='3', name='cc', age='14'}]}
 
