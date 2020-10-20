@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>A-Lambda-Test</module>
+        <module>B-Thread-Test</module>
     </modules>
 
 
